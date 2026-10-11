@@ -258,13 +258,52 @@ body {
     font-size: 0.85rem;
 }
 
-/* Footer */
+/* Footer & 2 Instagram Links Styling */
 .footer {
-    padding: 40px 0;
+    padding: 50px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
     margin-top: 60px;
     background-color: var(--card-bg);
+}
+
+.footer-social-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.ig-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: var(--badge-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.ig-icon {
+    stroke: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.ig-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.ig-link:hover .ig-icon {
+    transform: scale(1.1);
 }
 
 .copyright {
