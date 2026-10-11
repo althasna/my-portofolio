@@ -1,53 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Character Designer</title>
+    <title>Portfolio - Character Designer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header / Navbar (Hanya About & Artwork) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PORTFOLIO</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#artwork">Artwork</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1>Hi, I'm Hasna Althafunnisa</h1>
-            <p class="subtitle">Character Designer & Digital Illustrator</p>
-            <div class="about-box">
-                <p><strong>Role:</strong> Student & Digital Illustrator</p>
-                <p><strong>Focus:</strong> Character Design & Concept Art</p>
-                <p><strong>Primary Tool:</strong> Ibis Paint X</p>
-                <p><strong>Contact:</strong> althank24@gmail.com</p>
+        <div class="container hero-content">
+            <span class="badge">Digital Artist & Character Designer</span>
+            <h1>Hi, I'm <span class="highlight">Hasna Althafunnisa</span></h1>
+            
+            <!-- English About Me Text -->
+            <div class="hero-about-text">
+                <p>
+                    I am a passionate <strong>Character Designer & Digital Artist</strong> specializing in character concepts, visual designs, and expressive digital illustrations.
+                </p>
+                <p>
+                    Driven by visual exploration, I work across a variety of styles—from cartoon character concepts and soft watercolor menus to detailed line art and VTuber designs. I place a strong emphasis on precise editing, symmetry, lighting, and aesthetic details to bring unique concepts to life.
+                </p>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#artwork" class="btn-primary">View Artworks</a>
             </div>
         </div>
     </header>
 
-    <section class="gallery-section">
+    <!-- Section Info / About -->
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>Art Gallery</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <img src="artwork-1.png" alt="Artwork 1">
-                    <h3>VTuber Character Design</h3>
+            <div class="about-grid">
+                <div class="info-card">
+                    <h3>Focus Area</h3>
+                    <p>Character Design & Concept Art</p>
                 </div>
-                <div class="card">
-                    <img src="artwork-2.png" alt="Artwork 2">
-                    <h3>Character Design</h3>
+                <div class="info-card">
+                    <h3>Primary Tool</h3>
+                    <p>Ibis Paint X / Digital Software</p>
                 </div>
-                <div class="card">
-                    <img src="artwork-3.png" alt="Artwork 3">
-                    <h3>Character Design</h3>
-                </div>
-                <div class="card">
-                    <img src="artwork-4.png" alt="Artwork 4">
-                    <h3>Character Design</h3>
-                </div>
-                <div class="card">
-                    <img src="artwork-5.png" alt="Artwork 5">
-                    <h3>Character Design</h3>
+                <div class="info-card">
+                    <h3>Status</h3>
+                    <p>Open for Commissions & Projects</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Artwork Gallery Section -->
+    <section id="artwork" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Artworks</h2>
+                <p>Selected digital illustrations & character concepts</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="artwork-1.png" alt="Artwork 1">
+                    </div>
+                    <div class="card-info">
+                        <h3>VTuber Character Design</h3>
+                        <p>Character Concept</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="artwork-2.png" alt="Artwork 2">
+                    </div>
+                    <div class="card-info">
+                        <h3>Digital Illustration</h3>
+                        <p>Character Design</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="artwork-3.png" alt="Artwork 3">
+                    </div>
+                    <div class="card-info">
+                        <h3>Digital Illustration</h3>
+                        <p>Character Design</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="artwork-4.png" alt="Artwork 4">
+                    </div>
+                    <div class="card-info">
+                        <h3>Digital Illustration</h3>
+                        <p>Character Design</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="artwork-5.png" alt="Artwork 5">
+                    </div>
+                    <div class="card-info">
+                        <h3>Digital Illustration</h3>
+                        <p>Character Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2026 Hasna Althafunnisa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
